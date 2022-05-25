@@ -1,15 +1,13 @@
-
 <html>
     <head>
     </head>
     <body>
-        <h1>id="titulo<span>Hello World!</span></h1>
-        <p class="textoRoxo">Aqui vem outro parágrafo</p>
-        <p>Aqui tem outro parágrafo</p>
-        <img>
-        <ol class="textRoxo">
-            <li>Lorem</li>
-            <li>Aqui é o segundo item da lista</li>
-        </ol>
-     </body>
+        <h1 id="titulo"><span>Hello</span></h1>
+        {% for entrada in entradas %}
+        <h2> {{ entrada.titulo }} </h2>
+        <p >  {{ entrada.texto }} </p> 
+        {% endfor %}
+        
+        
+    </body>
 </html>
